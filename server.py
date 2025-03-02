@@ -58,7 +58,6 @@ if __name__ == '__main__':
     add_command('123', {"command": "execute", "args": "cmd.exe /c dir"})
     with open('sample.txt', 'rb') as f:
         file_content = base64.b64encode(f.read()).decode()
-    #add_command('DESKTOP-RK4LB8E_365270', {"command": "upload", "file_path": "sample.txt", "file_content": file_content})
     add_command('DESKTOP-ID', {"command": "execute", "args": "cmd.exe /c echo Hello"})
 
     app.run(host='0.0.0.0', port=8080)
